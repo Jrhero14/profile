@@ -1171,7 +1171,19 @@ section .container {
   z-index: 999999;
 }
 
+#medhide2 {
+  display: none !important;
+}
+
 @media (max-width: 992px) {
+  #medhide {
+    display: none !important;
+  }
+
+  #medhide2 {
+    display: flex !important;
+  }
+
   .credits {
     text-align: center;
     padding: 10px;
