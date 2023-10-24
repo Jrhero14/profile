@@ -110,6 +110,13 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+  .animationBG {
+    height: 7300px;
+    width: 100%;
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
