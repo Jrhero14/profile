@@ -43,7 +43,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="py-5">
+        <header class="pb-5 py-3 headerAnimation">
             <div class="container px-5 pb-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-xxl-5">
@@ -52,9 +52,9 @@
                             <div class="badge bgGradient text-white mb-4">
                                 <div class="text-uppercase">Design &middot; Web Development &middot; ML Enginner</div>
                             </div>
-                            <div class="fs-3 fw-light text-muted">Bukan masalah percaya pada teknologi, tetapi
+                            <div class="fs-3 fw-light text-muted tl1">
                             </div>
-                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Percayalah pada diri Anda</span></h1>
+                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline tl2"></span></h1>
                             <div
                                 class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                 <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
@@ -404,6 +404,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin,)
+        gsap.to('.tl1', { duration: 2, text: 'Bukan masalah percaya pada teknologi, tetapi'})
+        gsap.to('.tl2', { duration: 3.5, text: 'Percayalah pada diri Anda'})
+        //gsap.from('.headerAnimation', { duration: 1.2, y: -100, opacity: 0, ease: 'expo'})
+        gsap.from('.profile', { duration: 1.2, y: -100, opacity: 0.8, ease: 'bounce'})
+    </script>
 </body>
 
 </html>
