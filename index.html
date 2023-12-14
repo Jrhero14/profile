@@ -4,7 +4,8 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="css/output.css" rel="stylesheet">
+     <title>Jeremi Herodian</title>
+     <link href="/css/output.css" rel="stylesheet">
 </head>
 
 <body class="dark:bg-slate-900">
@@ -17,7 +18,7 @@
           <nav class="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
                aria-label="Global">
                <div class="flex items-center justify-between">
-                    <a class="flex-none text-xl font-bold text-blue-600" href="/profile/" aria-label="Brand">Jeremi Herodian</a>
+                    <a class="flex-none text-xl font-bold text-blue-600" href="index.html" aria-label="Brand">Jeremi Herodian</a>
                     <div class="sm:hidden">
                          <button type="button"
                               class="hs-collapse-toggle w-9 h-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
@@ -40,14 +41,14 @@
                     class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
                     <div
                          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-                         <a class="font-medium text-blue-600 sm:py-6 dark:text-blue-500" href="/profile/"
-                              >Home</a>
+                         <a class="font-medium text-blue-600 sm:py-6 dark:text-blue-500" href="index.html"
+                              aria-current="page">Home</a>
                          <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                              href="/profile/resume.html">Resume</a>
+                              href="resume.html">Resume</a>
                          <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                              href="/profile/projects.html">Portofolio</a>
+                              href="portofolio.html">Portofolio</a>
                          <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                              href="/profile/contact.html">Contact</a>
+                              href="contact.html">Contact</a>
                          <input data-hs-theme-switch
                               class="relative w-[3.25rem] h-7 bg-gray-100 checked:bg-none checked:bg-blue-600 border-2 border-slate-400 rounded-full cursor-pointer transition-colors ease-in-out duration-200 ring-1 ring-transparent focus:border-slate-700 focus:ring-slate-700 focus:outline-none appearance-none
 
@@ -61,16 +62,17 @@ after:absolute after:end-1.5 after:top-[calc(50%-0.40625rem)] after:w-[.8125rem]
      </header>
      <!-- End Header -->
 
+
      <!-- Hero Section Start -->
      <div
           class="relative max-w-7xl w-full mx-auto sm:flex sm:items-center sm:justify-between px-6 lg:px-8 mt-16 lg:mt-24">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-20 align-middle items-center justify-center">
                <!-- Desc -->
-               <div class="">
-                    <h1
+               <div>
+                    <h1 id="skill"
                          class="bg-gradient-to-r from-red-500 via-purple-500 to-blue-700 text-xs font-bold uppercase text-white p-1 rounded-md w-fit">
                          Design • Web Developer • Fullstack Developer</h1>
-                    <div class="mt-8">
+                    <div id="quotes" class="mt-8">
                          <p class="text-3xl font-thin text-slate-500 dark:text-white">
                               Teknologi tidak dapat menggantikan manusia, tetapi yang penting
                          </p>
@@ -80,19 +82,20 @@ after:absolute after:end-1.5 after:top-[calc(50%-0.40625rem)] after:w-[.8125rem]
                          <p class="text-lg font-normal text-slate-600 dark:text-slate-200 mt-5">- Jeremi Herodian</p>
                     </div>
                     <div class="mt-10 w-full flex gap-3 lg:gap-8">
-                         <a href="/profile/resume.html"
+                         <a href="/resume.html" id="ResumeButton"
                               class="py-5 px-12 inline-flex items-center gap-x-10 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                               Resume
                          </a>
-                         <a href="/profile/projects.html"
+                         <a href="/portofolio.html" id="ProjectsButton"
                               class="py-5 px-12 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-black text-black hover:border-gray-500 hover:text-gray-500 dark:hover:border-gray-500 dark:hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 dark:border-white dark:text-white">Projects</a>
                     </div>
                </div>
 
                <!-- PhotoProfile -->
                <div class="flex justify-center">
-                    <div class="profile h-[300px] w-[300px] lg:h-[580px] lg:w-[580px] rounded-3xl lg:rounded-[70px] relative">
-                         <img class="absolute bottom-0 left-8" width="85%" src="assets/profile.png" alt="" srcset="">
+                    <div id="photoprofile"
+                         class="profile h-[300px] w-[300px] lg:h-[580px] lg:w-[580px] rounded-3xl lg:rounded-[70px] relative">
+                         <img class="absolute bottom-0 left-8" width="85%" src="/img/profile.png" alt="" srcset="">
 
                          <div class="w-4 lg:w-6 fill-white absolute right-3 top-10 lg:top-14">
                               <!-- SVG Dots-->
@@ -394,9 +397,11 @@ after:absolute after:end-1.5 after:top-[calc(50%-0.40625rem)] after:w-[.8125rem]
                <!-- End Col -->
 
                <div class="mt-3 flex flex-col justify-center items-center">
-                    <p class="text-xl text-slate-600 dark:text-slate-400 font-thin">Nama saya Jeremi Herodian Abednigo</p>
-                    <p class="w-full lg:w-[68%] mt-5 text-slate-600 dark:text-slate-400">Saya adalah seorang penggila dunia teknologi yang terus
-                         mengikuti perkembangan dunia Sistem,
+                    <p class="text-xl text-slate-600 dark:text-slate-400 font-thin">Nama saya Jeremi Herodian Abednigo
+                    </p>
+                    <p class="w-full lg:w-[68%] mt-5 text-slate-600 dark:text-slate-400">Saya adalah seorang penggila
+                         dunia teknologi yang terus
+                         mengikuti perkembangan dunia development system,
                          desain UI/UX, dan Machine Learning. Saya juga tertarik dengan pengembangan game.</p>
                </div>
 
@@ -441,8 +446,42 @@ after:absolute after:end-1.5 after:top-[calc(50%-0.40625rem)] after:w-[.8125rem]
      </footer>
      <!-- Footer End -->
 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+     <script>
+          gsap.from('#skill', {
+               duration: 1.5,
+               ease: "expo.out",
+               opacity: 0.25,
+               y: -90
+          });
 
+          gsap.from('#quotes', {
+               duration: 2,
+               ease: "expo.out",
+               opacity: 0.25,
+               y: -100
+          });
 
+          gsap.from('#ResumeButton', {
+               duration: 2,
+               ease: "expo.out",
+               opacity: 0.25,
+               y: 100
+          });
+
+          gsap.from('#ProjectsButton', {
+               duration: 2,
+               ease: "expo.out",
+               opacity: 0.25,
+               y: 100
+          });
+
+          gsap.from('#photoprofile', {
+               duration: 1.2,
+               ease: "bounce.out",
+               y: -70
+          });
+     </script>
      <script async src="js/preline.js"></script>
 </body>
 
